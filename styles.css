@@ -1,0 +1,328 @@
+:root{
+    --variablecolorgris:#232223;
+    --variablecolorgrismedio: #373636;
+    --variablecolorletratítulo:  rgb(241,241,241); 
+    --variablecolorletrasubtítulo: rgb(185, 184, 184);
+}   
+
+*{
+    box-sizing: border-box;
+    top: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    background-color: #0f0f0f;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100vh;
+    position: sticky;
+}
+
+aside div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+aside div a{
+    font-size: 0.7rem;
+}
+
+aside div img{
+    width: 34px;
+}
+
+.Iconos{
+    width: 28px;
+}
+
+.Hoveraside{
+    padding: 18px 7px;
+    border-radius: 12px;
+}
+
+.Hoveraside:hover{
+    background-color: var(--variablecolorgris);
+}
+
+#BurgerMenú{
+    margin: 10px 0px 30px 0px;
+}
+
+#BurgerMenú img{
+    width: 38px;
+    height: 38px;
+}
+
+.ImagenBurMenú{
+    padding: 5px 0px 5px 0px;
+    border-radius: 50px;
+}
+
+.ImagenBurMenú:hover{
+    background-color: var(--variablecolorgris);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Logo{
+    width: 135px;
+    height: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#Búsqueda{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 5px;
+}
+
+#Búsqueda div{
+    display: flex;
+    align-items: center;
+    border: #303030 solid 2px;
+    border-radius: 25px;
+}
+
+#Búsqueda input{
+    width: 590px;
+    height: 42px;
+    padding-left: 10px;
+    border-radius: 25px 0px 0px 25px;
+    border: none;
+    background-color: transparent;
+}
+
+#Lupa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--variablecolorgris);
+    border-color: var(--variablecolorgrismedio);
+    border-style: solid;
+    border-width: 0px 0px 0px 1.7px;
+    width: 65px;
+    height: 42px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+#Lupa img{
+    width: 60px;
+    cursor: pointer;
+}
+
+#AnclaMicrófono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+}
+
+#AnclaMicrófono:hover{
+    background-color: var(--variablecolorgris);
+}
+
+#Img-Micrófono{
+    width: 38px;
+}
+
+#Acciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 22px;
+}
+
+#Acciones a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.Iconosnav{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+#Acciones a:hover{
+    background-color: var(--variablecolorgris);
+}
+
+#ImgPerfil{
+    background-color: transparent;
+}
+
+#ImgPerfil img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.Recomendaciones{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    margin-left: 30px;
+}
+
+.Recomendaciones button{
+    color: white;
+    background-color: var(--variablecolorgris);
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Recomendaciones button:hover{
+    background-color: rgb(74, 74, 74);
+}
+
+#Botblanco{
+    color: black;
+    background-color: white;
+    font-weight: 400;
+}
+
+#Cuadriculavideos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 15px 80px 10px 80px;
+    place-items: start center;
+}
+
+.CajaVideo{
+    display: flex;
+    flex-direction: column;
+}
+
+.ImagendeVideo{
+    margin-top: 35px;
+    width: 400px;
+    height: 230px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.LogoCanal{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.LogoCanal img{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#Letra{
+    font-weight: 600;
+    font-size: 19px;
+    color: var(--variablecolorletratítulo);
+    margin-block-end: 8px;
+    width: 340px;
+    cursor: pointer;
+}
+
+.Letra1{
+    font-size: 17px;
+    color: var(--variablecolorletrasubtítulo);
+    width: 340px;
+    cursor: pointer;
+}
+
+#Franja{
+    border: solid var(--variablecolorgrismedio);
+    border-width: 5px 0px 5px 0px;
+    margin: 50px 80px 50px 80px;
+    height: 600px;
+}
+
+#Ambascajitas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0px 0px 0px;
+}
+
+.LogoShorts{
+    width: 17px;
+    height: 22px;
+    margin-top: 5px;
+}
+
+.Letrashorts{
+    margin-right: 1100px;
+    font-size: 23px;
+}
+
+.Equis{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#Cuadricula2Video{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.ImgShort{
+    /* margin-top: 30px; */
+    width: 190px;
+    height: 340px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Letraa{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--variablecolorletratítulo);
+    margin-block-end: 8px;
+    width: 175px;
+    cursor: pointer;
+}
+
+.Letra1b{
+    font-size: 17px;
+    color: var(--variablecolorletrasubtítulo);
+    width: 175px;
+    cursor: pointer;
+}
